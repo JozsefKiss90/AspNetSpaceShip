@@ -1,0 +1,120 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;&#xD;
+  &lt;Assembly Path="C:\Users\jozsi\.nuget\packages\npgsql.entityframeworkcore.postgresql\7.0.11\lib\net7.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll" /&gt;&#xD;
+&lt;/AssemblyExplorer&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=022646f8_002D6bbc_002D4c15_002Da262_002D5341b0646b1e/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Tests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2A3AC4FD-7C5D-47C6-9126-DEAA59EFEE24::net7.0::UpgradeableTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=338009cf_002D4b83_002D42b1_002Db92d_002Dada6f34bb2e4/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Tests #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2A3AC4FD-7C5D-47C6-9126-DEAA59EFEE24::net7.0::TestProject.Tests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=55969279_002D13d8_002D42f9_002Db0d0_002Daa097710856f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GetUpgradeCost_WhenNotMax_ReturnsCosts #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2A3AC4FD-7C5D-47C6-9126-DEAA59EFEE24::net7.0::UpgradeableTests.GetUpgradeCost_WhenNotMax_ReturnsCosts&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2A3AC4FD-7C5D-47C6-9126-DEAA59EFEE24::net7.0::UpgradeableTests.GetUpgradeCost_SimplifiedTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2A3AC4FD-7C5D-47C6-9126-DEAA59EFEE24::net7.0::UpgradeableTests.GetUpgradeCost_SimplifiedTest_2&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2A3AC4FD-7C5D-47C6-9126-DEAA59EFEE24::net7.0::UpgradeableTests.GetUpgradeCost_VerifyLevelServiceCalls&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=5ab7241c_002D4519_002D485e_002Db94a_002D05bc4d4aad1c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Authentication_ShouldSucceed_WithValidToken" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::B33B4C50-A0DF-4C9A-8AFF-9F285F89F73E::net7.0::Intergration.AuthenticationIntegrationTests.Authentication_ShouldSucceed_WithValidToken&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::B33B4C50-A0DF-4C9A-8AFF-9F285F89F73E::net7.0::Intergration.SpaceShipControllerIntegrationTests.GetAllAsync_ReturnsShips_WhenUserAuthenticated&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::B33B4C50-A0DF-4C9A-8AFF-9F285F89F73E::net7.0::Intergration.SpaceShipControllerIntegrationTests.GetShipsByStationId_ReturnsShips&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::B33B4C50-A0DF-4C9A-8AFF-9F285F89F73E::net7.0::Intergration.SpaceShipControllerIntegrationTests.GetByIdAsync_ReturnsShipDetails&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::B33B4C50-A0DF-4C9A-8AFF-9F285F89F73E::net7.0::Intergration.SpaceShipControllerIntegrationTests.CreateAsync_CreatesShip&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=5d2740a0_002D2e0d_002D4702_002Dbbc8_002D9bfa2691eb9d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CreateShip_CreatesNewShip_ForValidInput #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2A3AC4FD-7C5D-47C6-9126-DEAA59EFEE24::net7.0::SpaceShipAPI.Tests.Services.ShipServiceTests.CreateShip_CreatesNewShip_ForValidInput&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2A3AC4FD-7C5D-47C6-9126-DEAA59EFEE24::net7.0::SpaceStationServiceTests.GetBaseByIdAsync_ReturnsSpaceStation_ForValidUserAndStationId&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2A3AC4FD-7C5D-47C6-9126-DEAA59EFEE24::net7.0::SpaceStationServiceTests.CreateAsync_CreatesSpaceStation_ForValidInput&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2A3AC4FD-7C5D-47C6-9126-DEAA59EFEE24::net7.0::SpaceStationServiceTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::B33B4C50-A0DF-4C9A-8AFF-9F285F89F73E::net7.0::Intergration.SpaceShipControllerIntegrationTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=672ccc0b_002D7787_002D4517_002D84ec_002De5e5c26fcdbe/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GetAllAsync_ReturnsShips_WhenUserAuthenticated" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::B33B4C50-A0DF-4C9A-8AFF-9F285F89F73E::net7.0::Intergration.SpaceShipControllerIntegrationTests.GetAllAsync_ReturnsShips_WhenUserAuthenticated&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=8ba8d3f1_002D0289_002D4c93_002D8620_002D5fb4f9202c9d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CreateShip_CreatesNewShip_ForValidInput #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2A3AC4FD-7C5D-47C6-9126-DEAA59EFEE24::net7.0::SpaceShipAPI.Tests.Services.ShipServiceTests.CreateShip_CreatesNewShip_ForValidInput&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2A3AC4FD-7C5D-47C6-9126-DEAA59EFEE24::net7.0::SpaceStationServiceTests.GetBaseByIdAsync_ReturnsSpaceStation_ForValidUserAndStationId&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2A3AC4FD-7C5D-47C6-9126-DEAA59EFEE24::net7.0::SpaceStationServiceTests.CreateAsync_CreatesSpaceStation_ForValidInput&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2A3AC4FD-7C5D-47C6-9126-DEAA59EFEE24::net7.0::SpaceStationServiceTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::B33B4C50-A0DF-4C9A-8AFF-9F285F89F73E::net7.0::Intergration.SpaceShipControllerIntegrationTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=91567697_002D8cc7_002D4097_002D87cc_002D63aa2bbfe6aa/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CreateAsync_CreatesShip" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::B33B4C50-A0DF-4C9A-8AFF-9F285F89F73E::net7.0::Intergration.SpaceShipControllerIntegrationTests.CreateAsync_CreatesShip&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=97a4e77f_002Da2f8_002D478c_002D8042_002D9d4d512f2935/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GetShipsByStationAsync_ReturnsShipsForAuthorizedUser" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2A3AC4FD-7C5D-47C6-9126-DEAA59EFEE24::net7.0::SpaceShipAPI.Tests.Services.ShipServiceTests.GetShipsByStationAsync_ReturnsShipsForAuthorizedUser&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2A3AC4FD-7C5D-47C6-9126-DEAA59EFEE24::net7.0::SpaceShipAPI.Tests.Services.SpaceStationServiceTests.CreateAsync_CreatesSpaceStation_ForValidInput&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2A3AC4FD-7C5D-47C6-9126-DEAA59EFEE24::net7.0::SpaceShipAPI.Tests.Services.SpaceStationServiceTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2A3AC4FD-7C5D-47C6-9126-DEAA59EFEE24::net7.0::SpaceStationServiceTests.CreateAsync_CreatesSpaceStation_ForValidInput&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2A3AC4FD-7C5D-47C6-9126-DEAA59EFEE24::net7.0::SpaceStationServiceTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::B33B4C50-A0DF-4C9A-8AFF-9F285F89F73E::net7.0::Intergration.SpaceShipControllerIntegrationTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ac90c6f7_002D8357_002D45f7_002D8c7c_002Dab55143ac91e/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GetUpgradeCost_VerifyLevelServiceCalls #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2A3AC4FD-7C5D-47C6-9126-DEAA59EFEE24::net7.0::UpgradeableTests.GetUpgradeCost_VerifyLevelServiceCalls&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ae511866_002D5587_002D41e9_002Daa69_002D8b66fca1295d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GetUpgradeCost_VerifyLevelServiceCalls #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2A3AC4FD-7C5D-47C6-9126-DEAA59EFEE24::net7.0::UpgradeableTests.GetUpgradeCost_VerifyLevelServiceCalls&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2A3AC4FD-7C5D-47C6-9126-DEAA59EFEE24::net7.0::UpgradeableTests.GetUpgradeCost_WhenMax_ThrowsException&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2A3AC4FD-7C5D-47C6-9126-DEAA59EFEE24::net7.0::TestProject.UpgradeableTests.Constructor_WithExcessiveResources_ThrowsException&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2A3AC4FD-7C5D-47C6-9126-DEAA59EFEE24::net7.0::TestProject.UpgradeableTests.AddResource_SuccessfullyAddsResources&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2A3AC4FD-7C5D-47C6-9126-DEAA59EFEE24::net7.0::TestProject.UpgradeableTests.AddResource_ExceedingCapacity_ThrowsException&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2A3AC4FD-7C5D-47C6-9126-DEAA59EFEE24::net7.0::TestProject.MinerShipTest.CreateNewMinerShip_ReturnsMinerShipWithInitialSettings&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2A3AC4FD-7C5D-47C6-9126-DEAA59EFEE24::net7.0::TestProject.MinerShipTest.GetDetailedDTO_ReturnsCorrectMinerShipDTO&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2A3AC4FD-7C5D-47C6-9126-DEAA59EFEE24::net7.0::TestProject.MinerShipTest.UpgradePart_UpgradesSpecifiedPart&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2A3AC4FD-7C5D-47C6-9126-DEAA59EFEE24::net7.0::TestProject.MinerShipTest.GetUpgradeCost_ReturnsCorrectCostForPart&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2A3AC4FD-7C5D-47C6-9126-DEAA59EFEE24::net7.0::SpaceShipAPI.Tests.Services.ShipServiceTests.GetAllShips_ReturnsAllShips_ForAdminUser&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=b947ff33_002D7381_002D4a72_002D9fca_002D7705a79a7d33/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GetUpgradeCost_WhenNotMax_ReturnsCosts" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2A3AC4FD-7C5D-47C6-9126-DEAA59EFEE24::net7.0::UpgradeableTests.GetUpgradeCost_WhenNotMax_ReturnsCosts&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2A3AC4FD-7C5D-47C6-9126-DEAA59EFEE24::net7.0::SpaceShipAPI.Tests.Services.ShipServiceTests.CreateShip_CreatesNewShip_ForValidInput&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2A3AC4FD-7C5D-47C6-9126-DEAA59EFEE24::net7.0::SpaceShipAPI.Tests.Services.ShipServiceTests.GetShipsByStationAsync_ReturnsShipsForAuthorizedUser&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2A3AC4FD-7C5D-47C6-9126-DEAA59EFEE24::net7.0::SpaceShipAPI.Tests.Services.ShipServiceTests.GetUserAsync_ReturnsUser_ForValidClaimsPrincipal&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c7a09d84_002De07b_002D4d1b_002Da377_002Db0cd687bc37d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GetAllAsync_ReturnsShips_WhenUserAuthenticated #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::B33B4C50-A0DF-4C9A-8AFF-9F285F89F73E::net7.0::Intergration.SpaceShipControllerIntegrationTests.GetAllAsync_ReturnsShips_WhenUserAuthenticated&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::B33B4C50-A0DF-4C9A-8AFF-9F285F89F73E::net7.0::Intergration.AuthenticationIntegrationTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=da9a6809_002D70d6_002D4854_002Dbe7a_002D39d4c15c6d68/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CreateAsync_CreatesShip #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::B33B4C50-A0DF-4C9A-8AFF-9F285F89F73E::net7.0::Intergration.SpaceShipControllerIntegrationTests.CreateAsync_CreatesShip&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e98f81d0_002D8879_002D4d49_002D874f_002Da2932226c581/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CreateShip_CreatesNewShip_ForValidInput" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2A3AC4FD-7C5D-47C6-9126-DEAA59EFEE24::net7.0::SpaceShipAPI.Tests.Services.ShipServiceTests.CreateShip_CreatesNewShip_ForValidInput&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f39485d2_002Dee25_002D4af7_002D814d_002D2f58290d2d99/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GetUpgradeCost_VerifyLevelServiceCalls" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2A3AC4FD-7C5D-47C6-9126-DEAA59EFEE24::net7.0::UpgradeableTests.GetUpgradeCost_VerifyLevelServiceCalls&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2A3AC4FD-7C5D-47C6-9126-DEAA59EFEE24::net7.0::SpaceShipAPI.Tests.Services.ShipServiceTests.GetShipsByStationAsync_ReturnsShipsForAuthorizedUser&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2A3AC4FD-7C5D-47C6-9126-DEAA59EFEE24::net7.0::SpaceShipAPI.Tests.Services.ShipServiceTests.GetAllShips_ReturnsAllShips_ForAdminUser&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2A3AC4FD-7C5D-47C6-9126-DEAA59EFEE24::net7.0::SpaceShipAPI.Tests.Services.ShipServiceTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
