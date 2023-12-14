@@ -39,6 +39,7 @@
           "Microsoft.EntityFrameworkCore.InMemory": "7.0.0",
           "Microsoft.NET.Test.Sdk": "17.7.1",
           "Moq": "4.20.70",
+          "Moq.EntityFrameworkCore": "7.0.0.2",
           "SpaceShipAPI": "1.0.0",
           "coverlet.collector": "3.2.0",
           "xunit": "2.6.3",
@@ -1338,6 +1339,21 @@
         },
         "compile": {
           "lib/net6.0/Moq.dll": {}
+        }
+      },
+      "Moq.EntityFrameworkCore/7.0.0.2": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.11",
+          "Moq": "4.20.70"
+        },
+        "runtime": {
+          "lib/net6.0/Moq.EntityFrameworkCore.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.2.0"
+          }
+        },
+        "compile": {
+          "lib/net6.0/Moq.EntityFrameworkCore.dll": {}
         }
       },
       "NETStandard.Library/1.6.1": {
@@ -4598,6 +4614,13 @@
       "sha512": "sha512-4rNnAwdpXJBuxqrOCzCyICXHSImOTRktCgCWXWykuF1qwoIsVvEnR7PjbMk/eLOxWvhmj5Kwt+kDV3RGUYcNwg==",
       "path": "moq/4.20.70",
       "hashPath": "moq.4.20.70.nupkg.sha512"
+    },
+    "Moq.EntityFrameworkCore/7.0.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YRCJDexTyvx6ilJ+vMK42+wmUiVNmv4aYSpGC0y8j5YU+K1T94WsZHXiF4B3xU4eYmuzlBStXJeLxk4Hke7t2Q==",
+      "path": "moq.entityframeworkcore/7.0.0.2",
+      "hashPath": "moq.entityframeworkcore.7.0.0.2.nupkg.sha512"
     },
     "NETStandard.Library/1.6.1": {
       "type": "package",

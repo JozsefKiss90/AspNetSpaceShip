@@ -312,6 +312,7 @@ C:\Users\jozsi\RiderProjects\SpaceShipAPI\Intergration\bin\Debug\net7.0\refs\Sys
 C:\Users\jozsi\RiderProjects\SpaceShipAPI\Intergration\bin\Debug\net7.0\refs\WindowsBase.dll
 C:\Users\jozsi\RiderProjects\SpaceShipAPI\Intergration\bin\Debug\net7.0\Azure.Core.dll
 C:\Users\jozsi\RiderProjects\SpaceShipAPI\Intergration\bin\Debug\net7.0\Azure.Identity.dll
+C:\Users\jozsi\RiderProjects\SpaceShipAPI\Intergration\bin\Debug\net7.0\Castle.Core.dll
 C:\Users\jozsi\RiderProjects\SpaceShipAPI\Intergration\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\jozsi\RiderProjects\SpaceShipAPI\Intergration\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Users\jozsi\RiderProjects\SpaceShipAPI\Intergration\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
@@ -324,6 +325,7 @@ C:\Users\jozsi\RiderProjects\SpaceShipAPI\Intergration\bin\Debug\net7.0\Microsof
 C:\Users\jozsi\RiderProjects\SpaceShipAPI\Intergration\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
 C:\Users\jozsi\RiderProjects\SpaceShipAPI\Intergration\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\jozsi\RiderProjects\SpaceShipAPI\Intergration\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\jozsi\RiderProjects\SpaceShipAPI\Intergration\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.InMemory.dll
 C:\Users\jozsi\RiderProjects\SpaceShipAPI\Intergration\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\jozsi\RiderProjects\SpaceShipAPI\Intergration\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\jozsi\RiderProjects\SpaceShipAPI\Intergration\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
@@ -348,6 +350,8 @@ C:\Users\jozsi\RiderProjects\SpaceShipAPI\Intergration\bin\Debug\net7.0\Microsof
 C:\Users\jozsi\RiderProjects\SpaceShipAPI\Intergration\bin\Debug\net7.0\Microsoft.TestPlatform.Utilities.dll
 C:\Users\jozsi\RiderProjects\SpaceShipAPI\Intergration\bin\Debug\net7.0\Microsoft.VisualStudio.TestPlatform.Common.dll
 C:\Users\jozsi\RiderProjects\SpaceShipAPI\Intergration\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\jozsi\RiderProjects\SpaceShipAPI\Intergration\bin\Debug\net7.0\Moq.dll
+C:\Users\jozsi\RiderProjects\SpaceShipAPI\Intergration\bin\Debug\net7.0\Moq.EntityFrameworkCore.dll
 C:\Users\jozsi\RiderProjects\SpaceShipAPI\Intergration\bin\Debug\net7.0\Newtonsoft.Json.dll
 C:\Users\jozsi\RiderProjects\SpaceShipAPI\Intergration\bin\Debug\net7.0\Npgsql.dll
 C:\Users\jozsi\RiderProjects\SpaceShipAPI\Intergration\bin\Debug\net7.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
@@ -458,6 +462,3 @@ C:\Users\jozsi\RiderProjects\SpaceShipAPI\Intergration\obj\Debug\net7.0\refint\I
 C:\Users\jozsi\RiderProjects\SpaceShipAPI\Intergration\obj\Debug\net7.0\Intergration.pdb
 C:\Users\jozsi\RiderProjects\SpaceShipAPI\Intergration\obj\Debug\net7.0\Intergration.genruntimeconfig.cache
 C:\Users\jozsi\RiderProjects\SpaceShipAPI\Intergration\obj\Debug\net7.0\ref\Intergration.dll
-C:\Users\jozsi\RiderProjects\SpaceShipAPI\Intergration\bin\Debug\net7.0\Castle.Core.dll
-C:\Users\jozsi\RiderProjects\SpaceShipAPI\Intergration\bin\Debug\net7.0\Moq.dll
-C:\Users\jozsi\RiderProjects\SpaceShipAPI\Intergration\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.InMemory.dll

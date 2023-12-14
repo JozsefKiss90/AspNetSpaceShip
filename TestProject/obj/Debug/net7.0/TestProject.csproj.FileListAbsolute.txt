@@ -1,0 +1,7 @@
+C:\Users\jozsi\RiderProjects\SpaceShipAPI\TestProject\bin\Debug\net7.0\CoverletSourceRootsMapping
+C:\Users\jozsi\RiderProjects\SpaceShipAPI\TestProject\obj\Debug\net7.0\TestProject.csproj.AssemblyReference.cache
+C:\Users\jozsi\RiderProjects\SpaceShipAPI\TestProject\obj\Debug\net7.0\MvcTestingAppManifest.json
+C:\Users\jozsi\RiderProjects\SpaceShipAPI\TestProject\obj\Debug\net7.0\TestProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jozsi\RiderProjects\SpaceShipAPI\TestProject\obj\Debug\net7.0\TestProject.AssemblyInfoInputs.cache
+C:\Users\jozsi\RiderProjects\SpaceShipAPI\TestProject\obj\Debug\net7.0\TestProject.AssemblyInfo.cs
+C:\Users\jozsi\RiderProjects\SpaceShipAPI\TestProject\obj\Debug\net7.0\TestProject.csproj.CoreCompileInputs.cache

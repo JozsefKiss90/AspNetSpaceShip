@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "eUJPrrMGW2w0ESPavN5UY6YuuAVc5pX343mqJ9XnBJT5iM00G79asK7rSdmy0TjnvnenR6O7uQzsbVazJna9ug==",
+  "dgSpecHash": "axEk0pN9ADdAkpkKt822fuyfMjzTirm7GenRSDzQ8KPI7wDt1VQYRJ5RkKlhNpxK7VlKxoBlfJ0hErjL/n4isg==",
   "success": true,
   "projectFilePath": "C:\\Users\\jozsi\\RiderProjects\\SpaceShipAPI\\Intergration\\Intergration.csproj",
   "expectedPackageFiles": [
@@ -75,6 +75,7 @@
     "C:\\Users\\jozsi\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\jozsi\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\jozsi\\.nuget\\packages\\moq\\4.20.70\\moq.4.20.70.nupkg.sha512",
+    "C:\\Users\\jozsi\\.nuget\\packages\\moq.entityframeworkcore\\7.0.0.2\\moq.entityframeworkcore.7.0.0.2.nupkg.sha512",
     "C:\\Users\\jozsi\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\jozsi\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\jozsi\\.nuget\\packages\\npgsql\\7.0.6\\npgsql.7.0.6.nupkg.sha512",
