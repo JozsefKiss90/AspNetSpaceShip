@@ -194,7 +194,7 @@ public class SpaceShipControllerIntegrationTests : IClassFixture<WebApplicationF
     public async Task GetAllAsync_ReturnsShips_WhenUserAuthenticated()
     {
         _client.DefaultRequestHeaders.Authorization =
-            new AuthenticationHeaderValue("Bearer", _testUserToken); //debuggers returns valid token for _testUserToken 
+            new AuthenticationHeaderValue("Bearer", _testUserToken); 
         
         var response = await _client.GetAsync("/api/spaceships");
         response.EnsureSuccessStatusCode();
@@ -220,7 +220,6 @@ public class SpaceShipControllerIntegrationTests : IClassFixture<WebApplicationF
     [Fact]
     public async Task CreateAsync_CreatesShip()
     {
-
         _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _testUserToken);
 
         NewShipDTO newShip = new NewShipDTO("Test Ship", ShipColor.RED, ShipType.MINER);

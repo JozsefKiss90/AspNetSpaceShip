@@ -1,0 +1,52 @@
+.mission-list{
+    width: 100%;
+}
+
+.ml-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ml-list-toggle {
+    all:unset;
+    color: #ffffff88;
+}
+
+.ml-list-toggle:hover:not(:disabled) {
+    color: #ffffffcc;
+    cursor: pointer;
+}
+
+.ml-list-toggle:disabled {
+    color: #ffffff;
+}
+
+.ml-li {
+    border: 2px solid rgba(0, 204, 0, 0.700);
+    border-radius: 5px;
+    background-color: rgba(0, 53, 0, 0.650);
+    max-width: 100%;
+    margin: 5px;
+    padding: 10px;
+    color: #ffffffdd;
+}
+
+.ml-li:hover {
+    cursor: pointer;
+    border: 2px solid rgb(0, 204, 0);
+    background-color: rgba(0, 48, 0, 0.814);
+    color: #ffffff;
+}
+
+.ml-li-active {
+    display: flex;
+    flex-direction: row;
+}
+
+.ml-li-active > div:last-child {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

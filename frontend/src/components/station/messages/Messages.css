@@ -1,0 +1,35 @@
+.messages {
+  background-image: -webkit-linear-gradient(
+    rgba(0, 89, 0, 0.75),
+    rgba(0, 96, 0, 0.35),
+    rgba(0, 89, 0, 0.75)
+  );
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+  border: #000000 solid 4px;
+  box-shadow: 0 0 5px 5px rgba(0, 23, 0, 0.85);
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-color: rgba(0, 204, 0, 0.95) rgba(0, 0, 0, 0);
+  scrollbar-width: thin;
+}
+
+.messages::-webkit-scrollbar {
+  width: 8px;
+}
+
+.messages::-webkit-scrollbar-thumb {
+  background: rgba(0, 204, 0, 0.95);
+}
+
+.message-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}

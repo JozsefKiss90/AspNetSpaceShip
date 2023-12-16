@@ -32,5 +32,4 @@ public class AppDbContextTests
         Assert.NotNull(user);
     }
 
-    // Additional tests to validate various aspects of AppDbContext
 }

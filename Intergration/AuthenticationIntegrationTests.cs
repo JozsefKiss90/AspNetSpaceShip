@@ -19,7 +19,7 @@ using Moq;
 using SpaceshipAPI;
 using Xunit;
 using SpaceShipAPI;
-using SpaceShipAPI.Database; // Replace with your actual namespace
+using SpaceShipAPI.Database; 
 
 namespace Intergration
 {
@@ -35,7 +35,6 @@ namespace Intergration
                 builder.UseEnvironment("Testing");
                 builder.ConfigureTestServices(services =>
                 {
-                    // Mock UserManager and RoleManager  
                     var currentUser = new UserEntity { Id = "test_user_id", UserName = "test_user"};
 
                     var userStoreMock = new Mock<IUserStore<UserEntity>>();
@@ -55,11 +54,9 @@ namespace Intergration
                         new Mock<IdentityErrorDescriber>().Object,
                         new Mock<ILogger<RoleManager<IdentityRole>>>().Object);
 
-                    // Setup the mock behavior as needed
                     roleManagerMock.Setup(rm => rm.RoleExistsAsync(It.IsAny<string>())).ReturnsAsync(true);
                     roleManagerMock.Setup(rm => rm.CreateAsync(It.IsAny<IdentityRole>())).ReturnsAsync(IdentityResult.Success);
 
-                    // Replace UserManager and RoleManager with mocks
                     services.AddScoped<UserManager<UserEntity>>(_ => userManagerMock.Object);
                     services.AddScoped<RoleManager<IdentityRole>>(_ => roleManagerMock.Object);
                     
@@ -69,7 +66,6 @@ namespace Intergration
                         options.UseInMemoryDatabase("TestDb");
                     });
                     
-                    // Configure JWT authentication using a test signing key only if it's not already configured
                     if (!services.Any(x => x.ServiceType == typeof(IAuthenticationHandlerProvider)))
                     {
                         var signingKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("!SomethingSecret!"));
@@ -121,14 +117,11 @@ namespace Intergration
         [Fact]
         public async Task Authentication_ShouldSucceed_WithValidToken()
         {
-            // Arrange
             var token = GenerateTestUserToken();
             _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
-            // Act
             var response = await _client.GetAsync("/Auth/TestAuthentication"); 
 
-            // Assert
             Assert.True(response.IsSuccessStatusCode, "Authentication failed. Response status code: " + response.StatusCode);
         }
     }

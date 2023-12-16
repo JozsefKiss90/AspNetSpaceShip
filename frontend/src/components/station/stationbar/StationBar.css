@@ -1,0 +1,38 @@
+.station-bar {
+  display: grid;
+  grid-template-rows: 85px 3fr 4fr;
+  gap: 20px;
+}
+
+.station-bar > div {
+  min-height: 0;
+}
+
+.menu {
+  display: flex;
+  flex-flow: row;
+  gap: 5px;
+  padding: 3px;
+  background-image: -webkit-linear-gradient(#000000, #00170000);
+  box-sizing: border-box;
+}
+
+.menu > div {
+  justify-self: center;
+  align-self: center;
+}
+
+.stbar-list {
+  height: fit-content;
+  overflow-y: scroll;
+  scrollbar-color: rgba(0, 204, 0, 0.95) rgba(0, 0, 0, 0);
+  scrollbar-width: thin;
+}
+
+.stbar-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.stbar-list::-webkit-scrollbar-thumb {
+  background: rgba(0, 204, 0, 0.95);
+}

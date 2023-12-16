@@ -1,0 +1,35 @@
+.lrform-container {
+  padding: 5% 30% 0 30%;
+}
+
+.lrform-container > form {
+  font-size: 20px;
+  background: linear-gradient(#002b00e6, #005400e6);
+  color: white;
+  padding: 5px 20px 20px 20px;
+  border: 5px solid black;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 0 4px 4px rgba(29, 52, 0, 0.741);
+  gap: 15px;
+}
+
+.lrform-message {
+  font-size: 15px;
+  background: linear-gradient(#d10000e6, #3e0000e6);
+  margin: 10px 30px 10px 30px;
+  padding: 10px 20px 10px 20px;
+  color: white;
+  border: 2px solid rgb(46, 0, 0);
+  border-radius: 5px;
+  box-shadow: 0 0 2px 2px rgba(186, 0, 0, 0.741);
+  text-align: center;
+}
+
+.lrform-container span {
+  font-size: 15px;
+}

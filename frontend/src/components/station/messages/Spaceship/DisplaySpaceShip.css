@@ -1,0 +1,29 @@
+.container > div {
+    margin: 2px;
+    height: 45px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    justify-items: center;
+}
+
+.side-bar {
+    display: flex;
+    flex-flow: column-reverse;
+    justify-content: space-between;
+    width: 40%;
+    padding: 5px 5px 5px 20px;
+
+}
+
+.container {
+    width: 60%;
+    min-width: max-content;
+    padding: 5px;
+}
+
+.row {
+    display: flex !important;
+    flex-flow: row !important;;
+    justify-content: space-between !important;
+}

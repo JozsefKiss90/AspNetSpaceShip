@@ -1,0 +1,24 @@
+.move-resources {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.move-resources table {
+    width: 100%;
+}
+
+.move-resources td {
+    text-align: center;
+}
+
+.move-resources input {
+    all: unset;
+    min-width: 80%;
+    max-width: 40px;
+    background-color: rgba(9, 58, 9, 0.332);
+    border: 2px solid rgb(0, 204, 0);
+    border-radius: 5px;
+}

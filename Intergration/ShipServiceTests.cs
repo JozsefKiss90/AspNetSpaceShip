@@ -26,11 +26,9 @@ namespace IntegrationTests
         {
             var services = new ServiceCollection();
 
-            // Mock dependencies
             var userStoreMock = new Mock<IUserStore<UserEntity>>();
             var userManagerMock = new Mock<UserManager<UserEntity>>(userStoreMock.Object, null, null, null, null, null, null, null, null);
 
-            // Create UserManager with mocked user store
             var userManager = new UserManager<UserEntity>(
                 userStoreMock.Object, 
                 null, null, null, null, null, null, null, null);            var spaceShipRepoMock = new Mock<ISpaceShipRepository>();
@@ -43,10 +41,8 @@ namespace IntegrationTests
             var levelServiceMock = new Mock<ILevelService>();
             var missionRepositoryMock = new Mock<IMissionRepository>();
 
-            // Set up in-memory database
             services.AddDbContext<AppDbContext>(options => options.UseInMemoryDatabase("TestDb"));
     
-            // Add mocks to the service collection
             services.AddSingleton<UserManager<UserEntity>>(userManagerMock.Object);
             services.AddSingleton(spaceShipRepoMock.Object);
             services.AddSingleton(spaceStationRepoMock.Object);
@@ -55,14 +51,12 @@ namespace IntegrationTests
             services.AddSingleton(levelServiceMock.Object);
             services.AddSingleton(missionRepositoryMock.Object);
 
-            // Add ShipService with the mocked dependencies
             services.AddScoped<IShipService, ShipService>();
                 
             var serviceProvider = services.BuildServiceProvider();
             _dbContext = serviceProvider.GetRequiredService<AppDbContext>();
             _shipService = serviceProvider.GetRequiredService<IShipService>();
 
-            // Seed the database
             _dbContext.Users.Add(new UserEntity { Id = "test_user_id", UserName = "test_user" });
             _dbContext.SaveChanges();
         }
@@ -70,21 +64,17 @@ namespace IntegrationTests
         [Fact]
         public async Task CreateShip_ShouldCreateShip_WhenUserExists()
         {
-            // Arrange
             var newShipDTO = new NewShipDTO("Test Ship", ShipColor.RED, ShipType.MINER);
             var userPrincipal = new ClaimsPrincipal(new ClaimsIdentity(new Claim[]
             {
                 new Claim(ClaimTypes.NameIdentifier, "test_user_id")
             }));
 
-            // Act
             var result = await _shipService.CreateShip(newShipDTO, userPrincipal);
 
-            // Assert
             Assert.NotNull(result);
             Assert.IsType<ShipDTO>(result);
         }
 
-        // Additional tests can be written to test different scenarios
     }
 }

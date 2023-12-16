@@ -1,0 +1,26 @@
+.home-container {
+  padding: 5% 20% 0 20%;
+}
+
+.home-message {
+  font-size: 20px;
+  background: linear-gradient(#002b00e6, #005400e6);
+  color: white;
+  padding: 20px;
+  border: 5px solid black;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  box-shadow: 0 0 4px 4px rgba(29, 52, 0, 0.741);
+}
+.home-message>div {
+  padding-top: 5px;
+}
+
+.code {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start !important;
+}

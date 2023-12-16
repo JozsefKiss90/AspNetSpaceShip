@@ -1,0 +1,69 @@
+.explore {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.explore form {
+  width: 70%;
+  display: grid;
+  grid-template-areas:
+    "ship dist"
+    "dura reso"
+    "prio prio"
+    "acti acti";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 2fr 3fr 1fr;
+  align-items: center;
+  gap: 20px;
+}
+
+.exp-form {
+  border: 2px solid rgb(0, 204, 0);
+  background-color: rgba(0, 48, 0, 0.814);
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.exp-form > div {
+  margin: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.exp-form input {
+  max-width: 40px;
+}
+.exp-ships {
+  grid-area: ship;
+}
+
+.exp-distance {
+  grid-area: dist;
+}
+
+.exp-resource {
+  grid-area: reso;
+}
+
+.exp-priority {
+  grid-area: prio;
+}
+
+.exp-duration {
+  grid-area: dura;
+}
+
+.exp-actions {
+  grid-area: acti;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}

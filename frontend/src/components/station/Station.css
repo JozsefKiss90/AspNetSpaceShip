@@ -1,0 +1,10 @@
+.station {
+  display: grid;
+  grid-template-columns: minmax(400px, 2fr) minmax(700px, 7fr);
+  grid-template-rows: 80vh;
+  font-size: 18px;
+  width: 80vw;
+  height: 80vh;
+  margin: auto;
+  gap: 20px;
+}
