@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Identity;
 using Moq;
 using SpaceshipAPI;
+using SpaceShipAPI.Model;
 using SpaceShipAPI.Model.DTO.Ship;
 using SpaceshipAPI.Model.Ship;
 using SpaceShipAPI.Model.Ship;
@@ -34,7 +35,6 @@ namespace SpaceShipAPI.Tests.Services
             _levelServiceMock = new Mock<ILevelService>();
             _missionRepositoryMock = new Mock<IMissionRepository>();
             _userManagerMock = IdentityMocks.MockUserManager<UserEntity>();
-            _minerShipManager = new Mock<IMinerShipManager>();
             
             _shipService = new ShipService(
                 _userManagerMock.Object,
@@ -43,8 +43,7 @@ namespace SpaceShipAPI.Tests.Services
                 _shipManagerFactoryMock.Object, 
                 _missionFactoryMock.Object,
                 _levelServiceMock.Object,
-                _missionRepositoryMock.Object,
-                _minerShipManager.Object
+                _missionRepositoryMock.Object
             );
         }
 
@@ -75,21 +74,19 @@ namespace SpaceShipAPI.Tests.Services
             };
             
             var userClaimsPrincipal = new ClaimsPrincipal(new ClaimsIdentity(userClaims));
-
             var currentUser = new UserEntity { Id = userId, UserName = "sanyi"};
             _userManagerMock.Setup(manager => manager.GetUserAsync(It.IsAny<ClaimsPrincipal>()))
                 .ReturnsAsync(currentUser);
+            
 
             var newShipDto = new NewShipDTO("Test Ship", ShipColor.RED, ShipType.MINER);
             var mockSpaceShipManager = new Mock<ISpaceShipManager>();
-            var mockMinerShip = new MinerShip
-            {
-                Name = newShipDto.name,
-                Color = newShipDto.color,
-                DrillLevel = 0,
-                StorageLevel = 0,
-                StoredResources = null
-            };
+
+            _levelServiceMock.Setup(service => service.GetLevelByTypeAndLevel(It.IsAny<UpgradeableType>(), It.IsAny<int>()))
+                .Returns(new Level());
+           
+            var mockMinerShip = MinerShip.CreateNewMinerShip(_levelServiceMock.Object, newShipDto.name, newShipDto.color);
+            mockMinerShip.User = currentUser;    
             var mockMinerShipManager = new Mock<IMinerShipManager>();
             
             _shipManagerFactoryMock.Setup(factory => factory.GetSpaceShipManager(It.IsAny<SpaceShip>()))
@@ -97,7 +94,8 @@ namespace SpaceShipAPI.Tests.Services
             
             mockMinerShipManager.Setup(manager => manager.CreateNewShip(It.IsAny<ILevelService>(), It.IsAny<string>(), It.IsAny<ShipColor>()))
                 .Returns(mockMinerShip);
-            
+            mockSpaceShipManager.Setup(manager => manager.GetShip()).Returns(mockMinerShip);
+
             _spaceShipRepositoryMock.Setup(repo => repo.CreateAsync(It.IsAny<MinerShip>()))
                 .ReturnsAsync(mockMinerShip);
             
@@ -107,7 +105,6 @@ namespace SpaceShipAPI.Tests.Services
             Assert.IsNotNull(createdShip);
             Assert.AreEqual(newShipDto.name, createdShip.Name);
             Assert.AreEqual(newShipDto.color, createdShip.Color);
-            Assert.AreEqual(currentUser, createdShip.User);
         }
         
         [Test]

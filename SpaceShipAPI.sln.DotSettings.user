@@ -12,12 +12,16 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=243bae38_002D93ac_002D4573_002Db506_002D5b385ab8c093/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="AppDbContextIntegrationTest #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::B33B4C50-A0DF-4C9A-8AFF-9F285F89F73E::net7.0::Intergration.SpaceShipControllerIntegrationTests.AppDbContextIntegrationTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2A3AC4FD-7C5D-47C6-9126-DEAA59EFEE24::net7.0::SpaceShipAPI.Tests.Services.ShipServiceTests.CreateShip_CreatesNewShip_ForValidInput&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=915f04eb_002Dcdbc_002D4238_002D8d80_002Df3167b2af2a4/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="AppDbContextIntegrationTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::B33B4C50-A0DF-4C9A-8AFF-9F285F89F73E::net7.0::Intergration.SpaceShipControllerIntegrationTests.AppDbContextIntegrationTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2A3AC4FD-7C5D-47C6-9126-DEAA59EFEE24::net7.0::SpaceShipAPI.Tests.Services.ShipServiceTests.GetAllShips_ReturnsAllShips_ForAdminUser&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2A3AC4FD-7C5D-47C6-9126-DEAA59EFEE24::net7.0::SpaceShipAPI.Tests.Services.ShipServiceTests.CreateShip_CreatesNewShip_ForValidInput&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2A3AC4FD-7C5D-47C6-9126-DEAA59EFEE24::net7.0::SpaceShipAPI.Tests.Services.ShipServiceTests.GetShipsByStationAsync_ReturnsShipsForAuthorizedUser&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	

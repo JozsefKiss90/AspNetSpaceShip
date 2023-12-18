@@ -14,17 +14,20 @@ using SpaceshipAPI.Spaceship.Model.Station;
 [TestFixture]
 public class SpaceStationServiceTests
 {
+    private Mock<SpaceStation> _spaceStationMock;
     private Mock<UserManager<UserEntity>> _userManagerMock;
     private Mock<ISpaceStationRepository> _spaceStationRepositoryMock;
-    private Mock<ISpaceStationManager> _spaceStationManagerMock; // Mock for ISpaceStationManager
-    private Mock<IHangarManager> _hangarManagerMock; // Mock for HangarManager
+    private Mock<ISpaceStationManager> _spaceStationManagerMock; 
+    private Mock<IHangarManager> _hangarManagerMock; 
     private SpaceStationService _spaceStationService;
     private Mock<ILevelService> _levelServiceMock;
     private Mock<ISpaceStationService> _spaceStationServiceMock;
-    
+    private SpaceStation _spaceStation;
     [SetUp]
     public void SetUp()
     {
+        _spaceStation = new SpaceStation();
+        _spaceStationMock = new Mock<SpaceStation>();
         _userManagerMock = IdentityMocks.MockUserManager<UserEntity>();
         _spaceStationRepositoryMock = new Mock<ISpaceStationRepository>(MockBehavior.Strict);
         _spaceStationManagerMock = new Mock<ISpaceStationManager>(MockBehavior.Strict);
@@ -32,8 +35,8 @@ public class SpaceStationServiceTests
         _levelServiceMock = new Mock<ILevelService>(MockBehavior.Strict);
         _spaceStationServiceMock = new Mock<ISpaceStationService>(MockBehavior.Strict);
         
-        _hangarManagerMock.Setup(hangar => hangar.GetCurrentCapacity()).Returns(10); // Set the capacity as needed
-        _hangarManagerMock.Setup(hangar => hangar.GetCurrentAvailableDocks()).Returns(10); // Set the available docks as needed
+        _hangarManagerMock.Setup(hangar => hangar.GetCurrentCapacity()).Returns(10); 
+        _hangarManagerMock.Setup(hangar => hangar.GetCurrentAvailableDocks()).Returns(10); 
         _hangarManagerMock.Setup(hangar => hangar.GetAllShips()).Returns(new HashSet<SpaceShip>());
       
         _levelServiceMock.Setup(service => service.GetLevelByTypeAndLevel(It.IsAny<UpgradeableType>(), It.IsAny<int>()))
@@ -55,9 +58,7 @@ public class SpaceStationServiceTests
                 }
             });
 
-       
-        // Inject mocks into SpaceStationManager mock
-        _spaceStationManagerMock.Setup(manager => manager.CreateHangarIfNotExists()).Callback(() => {/* do nothing */});
+        _spaceStationManagerMock.Setup(manager => manager.CreateHangarIfNotExists(_spaceStation)).Callback(() => { });
 
         _spaceStationService = new SpaceStationService(
             _userManagerMock.Object,
@@ -110,11 +111,11 @@ public class SpaceStationServiceTests
 
         _spaceStationManagerMock.Setup(manager => manager.CreateNewSpaceStation(stationName))
             .Returns(createdSpaceStation);
-        _spaceStationManagerMock.Setup(manager => manager.GetHangarDTO())
+        _spaceStationManagerMock.Setup(manager => manager.GetHangarDTO(_spaceStation))
             .Returns(mockHangarDTO);
-        _spaceStationManagerMock.Setup(manager => manager.CreateHangarIfNotExists()).Callback(() => {/* do nothing */});
+        _spaceStationManagerMock.Setup(manager => manager.CreateHangarIfNotExists(_spaceStation)).Callback(() => {/* do nothing */});
         
-        _spaceStationManagerMock.Setup(manager => manager.GetStorageDTO())
+        _spaceStationManagerMock.Setup(manager => manager.GetStorageDTO(_spaceStation))
             .Returns(mockStorageDTO);
         // Act
         var result = await _spaceStationService.CreateAsync(stationName, userClaimsPrincipal);
@@ -156,7 +157,7 @@ public class SpaceStationServiceTests
         );        
         var mockSpaceStationDTO = new SpaceStationDTO(stationId, "Test Station", mockHangarDTO, mockStorageDTO);
 
-        _spaceStationManagerMock.Setup(manager => manager.GetStationDTO()).Returns(mockSpaceStationDTO);
+        _spaceStationManagerMock.Setup(manager => manager.GetStationDTO(_spaceStation)).Returns(mockSpaceStationDTO);
 
         // Act
         var result = await _spaceStationService.GetBaseByIdAsync(stationId, userClaimsPrincipal);
@@ -168,7 +169,7 @@ public class SpaceStationServiceTests
         // Verify that the necessary dependencies were called
         _spaceStationRepositoryMock.Verify(repo => repo.GetByIdAsync(stationId), Times.Once);
         _userManagerMock.Verify(manager => manager.FindByIdAsync(userId), Times.Once);
-        _spaceStationManagerMock.Verify(manager => manager.GetStationDTO(), Times.Once);
+        _spaceStationManagerMock.Verify(manager => manager.GetStationDTO(_spaceStation), Times.Once);
     }
     
     [Test]
