@@ -76,7 +76,9 @@ public class SpaceStationServiceTests
         // Arrange
         var userId = "test-user-id";
         var userName = "test-user";
-        var stationName = "New Station";
+        var station = new SpaceStationCreationDTO();
+        station.Name = "New Station";
+        var stationName = station.Name;
         var userClaims = new List<Claim>
         {
             new Claim(ClaimTypes.NameIdentifier, userId),
@@ -105,21 +107,27 @@ public class SpaceStationServiceTests
             1,
             false
         );
+
+        var mockStationDTO = new SpaceStationDTO(
+            createdSpaceStation.Id,
+            createdSpaceStation.Name,
+            mockHangarDTO,
+            mockStorageDTO
+        );
         
         _userManagerMock.Setup(manager => manager.GetUserAsync(userClaimsPrincipal)).ReturnsAsync(currentUser);
         _spaceStationRepositoryMock.Setup(repo => repo.CreateAsync(It.IsAny<SpaceStation>())).ReturnsAsync(createdSpaceStation);
 
         _spaceStationManagerMock.Setup(manager => manager.CreateNewSpaceStation(stationName))
             .Returns(createdSpaceStation);
-        _spaceStationManagerMock.Setup(manager => manager.GetHangarDTO(_spaceStation))
+        _spaceStationManagerMock.Setup(manager => manager.GetHangarDTO(createdSpaceStation))
             .Returns(mockHangarDTO);
-        _spaceStationManagerMock.Setup(manager => manager.CreateHangarIfNotExists(_spaceStation)).Callback(() => {/* do nothing */});
-        
-        _spaceStationManagerMock.Setup(manager => manager.GetStorageDTO(_spaceStation))
+        _spaceStationManagerMock.Setup(manager => manager.CreateHangarIfNotExists(_spaceStation)).Callback(() => {});
+        _spaceStationManagerMock.Setup(manager => manager.GetStorageDTO(createdSpaceStation))
             .Returns(mockStorageDTO);
-        // Act
+       
         var result = await _spaceStationService.CreateAsync(stationName, userClaimsPrincipal);
-        // Assert
+  
         Assert.IsNotNull(result);
         Assert.AreEqual(stationName, result.Name);
         Assert.AreEqual(1, result.Id);
@@ -131,7 +139,6 @@ public class SpaceStationServiceTests
     [Test]
     public async Task GetBaseByIdAsync_ReturnsSpaceStation_ForValidUserAndStationId()
     {
-        // Arrange
         var stationId = 1L;
         var userId = "1";
         var userClaims = new List<Claim> { new Claim(ClaimTypes.NameIdentifier, userId) };
@@ -139,7 +146,6 @@ public class SpaceStationServiceTests
         var currentUser = new UserEntity { Id = userId };
         var spaceStation = new SpaceStation { Id = stationId, Name = "Test Station", User = currentUser,  StoredResources =  new List<StoredResource>() };
 
-        // Set up mocks for GetStationByIdAndCheckAccessAsync dependencies
         _spaceStationRepositoryMock.Setup(repo => repo.GetByIdAsync(stationId)).ReturnsAsync(spaceStation);
         _userManagerMock.Setup(manager => manager.FindByIdAsync(userId)).ReturnsAsync(currentUser);
 
@@ -157,25 +163,22 @@ public class SpaceStationServiceTests
         );        
         var mockSpaceStationDTO = new SpaceStationDTO(stationId, "Test Station", mockHangarDTO, mockStorageDTO);
 
-        _spaceStationManagerMock.Setup(manager => manager.GetStationDTO(_spaceStation)).Returns(mockSpaceStationDTO);
+        _spaceStationManagerMock.Setup(manager => manager.GetStationDTO(spaceStation)).Returns(mockSpaceStationDTO);
 
-        // Act
         var result = await _spaceStationService.GetBaseByIdAsync(stationId, userClaimsPrincipal);
 
-        // Assert
         Assert.IsNotNull(result);
         Assert.AreEqual(stationId, result.Id);
         Assert.AreEqual("Test Station", result.Name);
-        // Verify that the necessary dependencies were called
+
         _spaceStationRepositoryMock.Verify(repo => repo.GetByIdAsync(stationId), Times.Once);
         _userManagerMock.Verify(manager => manager.FindByIdAsync(userId), Times.Once);
-        _spaceStationManagerMock.Verify(manager => manager.GetStationDTO(_spaceStation), Times.Once);
+        _spaceStationManagerMock.Verify(manager => manager.GetStationDTO(spaceStation), Times.Once);
     }
     
     [Test]
     public async Task GetStationByIdAndCheckAccessAsync_ReturnsStation_ForValidUserAndStationId()
     {
-        // Arrange
         var stationId = 1L;
         var userId = "1";
         var userClaims = new List<Claim> { new Claim(ClaimTypes.NameIdentifier, userId) };
@@ -185,11 +188,9 @@ public class SpaceStationServiceTests
 
         _spaceStationRepositoryMock.Setup(repo => repo.GetByIdAsync(stationId)).ReturnsAsync(spaceStation);
         _userManagerMock.Setup(manager => manager.FindByIdAsync(userId)).ReturnsAsync(currentUser); // Assuming GetCurrentUser uses FindByIdAsync
-
-        // Act
+        
         var result = await _spaceStationService.GetStationByIdAndCheckAccessAsync(stationId, userClaimsPrincipal);
-
-        // Assert
+        
         Assert.IsNotNull(result);
         Assert.AreEqual(stationId, result.Id);
         _spaceStationRepositoryMock.Verify(repo => repo.GetByIdAsync(stationId), Times.Once);

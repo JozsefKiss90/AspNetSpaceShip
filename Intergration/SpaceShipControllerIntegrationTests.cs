@@ -209,7 +209,7 @@ public class SpaceShipControllerIntegrationTests : IClassFixture<WebApplicationF
         _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _testUserToken);
         long shipId = 1;
 
-        var response = await _client.GetAsync($"/api/spaceships/{shipId}");
+        var response = await _client.GetAsync($"api/v1/ship/{shipId}");
         response.EnsureSuccessStatusCode();
 
         var shipDetails = await response.Content.ReadFromJsonAsync<ShipDTO>();
@@ -223,7 +223,7 @@ public class SpaceShipControllerIntegrationTests : IClassFixture<WebApplicationF
         _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _testUserToken);
 
         NewShipDTO newShip = new NewShipDTO("Test Ship", ShipColor.RED, ShipType.MINER);
-        var response = await _client.PostAsJsonAsync("/api/spaceships", newShip);
+        var response = await _client.PostAsJsonAsync("api/v1/ship/", newShip);
 
         Assert.True(response.IsSuccessStatusCode, $"Expected a success status code but got {response.StatusCode}");
 

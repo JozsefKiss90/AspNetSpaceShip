@@ -32,7 +32,7 @@ const Login = () => {
 
   async function handleLogin(formData) {
     try {
-      const res = await fetch("http://localhost:5056/Auth/Login", {
+      const res = await fetch("/Auth/Login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),

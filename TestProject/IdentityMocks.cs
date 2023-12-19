@@ -14,7 +14,7 @@ public static class IdentityMocks
         var userManager = new Mock<UserManager<TUser>>(store.Object, null, null, null, null, null, null, null, null);
 
         userManager.Setup(x => x.GetUserAsync(It.IsAny<ClaimsPrincipal>()))
-            .ReturnsAsync((ClaimsPrincipal principal) => null); // Implement as needed
+            .ReturnsAsync((ClaimsPrincipal principal) => null); 
 
         return userManager;
     }
@@ -31,7 +31,6 @@ public static class IdentityMocks
             new Claim(ClaimTypes.Name, "testuser"),
             new Claim(ClaimTypes.Email, "testuser@example.com"),
             new Claim(ClaimTypes.Role, role)
-            // Add other claims as needed
         };
 
         var principal = new Mock<ClaimsPrincipal>();
