@@ -1,4 +1,3 @@
-version: '3.8'
 services:
   postgres:
     image: postgres:latest
@@ -12,7 +11,7 @@ services:
       - pgdata:/var/lib/postgresql/data
 
   backend:
-    build: ./SpaceShipAPI
+    image: jozsefkiss90/spaceship-backend:latest  
     ports:
       - "5056:80"
     environment:
@@ -21,7 +20,7 @@ services:
       - postgres
 
   frontend:
-    build: ./frontend
+    image: jozsefkiss90/spaceship-frontend:latest  
     ports:
       - "3000:80"
     depends_on:

@@ -42,7 +42,7 @@ export default function Register() {
         const data = await res.json();
         if (data) {
           setUpdate(!update);
-          navigate("/station");
+          navigate("/login");
         }
       } else {
         handleFetchError(res);
