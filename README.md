@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # AspNetSpaceShip
 =======
 # Spaceship Manager Browser Game
@@ -79,4 +78,3 @@ This project is licensed under [Your License Choice].
 ## Additional Notes
 - Ensure you change the password in the `docker-compose.yml` and `appsettings.json` files to maintain security.
 - Replace any placeholder URLs with your project's actual URLs.
->>>>>>> docker
