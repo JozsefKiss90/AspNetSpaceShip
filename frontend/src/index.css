@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url("./../public/sanc-bridge-full-transparent.jpg");
+  background-position: center;
+  background-size: cover;
+  /*background-color: forestgreen;*/
+  font-family: "Orbitron", sans-serif;
+}
+
+#root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.clickable {
+  text-decoration: underline;
+  color: #e0b861;
+}
+
+.clickable:hover {
+  text-shadow: 1px 1px 1px rgb(24, 17, 6), 0 0 0.2em rgb(14, 12, 1), 0 0 0.2em rgb(44, 33, 5);
+  cursor: pointer;
+}
+
+h2 {
+  margin: 0 0 15px 0;
+}
+
+.button {
+  margin: 0 5px;
+  padding: 4px;
+  font-size: 15px;
+  border: black solid 2px;
+  border-radius: 5px;
+  background-color: forestgreen;
+  max-width: fit-content;
+  text-align: center;
+  justify-self: center;
+  color: inherit;
+  font-family: inherit;
+  align-self: center;
+  box-shadow: 1px 1px 1px rgb(21, 49, 1), 0px 0px 0.2em rgb(21, 49, 1), 0px 0px 0.2em rgb(21, 49, 1);
+}
+
+.button:hover:not(:disabled) {
+  box-shadow: 0px 0px 0.3em rgba(236, 200, 90, 0.85), 0px 0px 0.3em rgb(225, 196, 132),
+    0px 0px 0.3em rgb(225, 196, 132);
+  border: forestgreen solid 2px;
+  background-color: #2db62d;
+  cursor: pointer;
+}
+
+.button:disabled {
+  background-color: rgb(67, 102, 67);
+}
+
+.red {
+  background-color: rgb(145, 0, 0) !important;
+  box-shadow: 0px 0px 0.3em rgba(236, 90, 90, 0.45) !important;
+}
+
+.red:hover:not(:disabled) {
+  border: rgb(145, 0, 0) solid 2px !important;
+  background-color: rgb(250, 0, 0) !important;
+  box-shadow: 0px 0px 0.3em rgba(236, 90, 90, 0.85), 0px 0px 0.3em rgba(236, 90, 90, 0.85),
+    0px 0px 0.3em rgba(236, 90, 90, 0.85) !important;
+}
+
+.red:disabled {
+  background-color: rgb(166, 88, 88) !important;
+}
+
+.blue {
+  background-color: rgb(0, 0, 166) !important;
+  box-shadow: 0px 0px 0.3em rgba(100, 90, 236, 0.45) !important;
+}
+
+.blue:hover:not(:disabled) {
+  border: rgb(0, 0, 162) solid 2px !important;
+  background-color: rgb(0, 0, 171) !important;
+  box-shadow: 0px 0px 0.3em rgba(0, 200, 255, 0.45), 0px 0px 0.3em rgba(0, 200, 255, 0.45),
+    0px 0px 0.3em rgba(0, 200, 255, 0.45) !important;
+}
+
+.error-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.error-box {
+  width: 60%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 30px;
+  background: linear-gradient(#420000e6, #be0000ea);
+  border: 5px solid black;
+  border-radius: 5px;
+  box-shadow: 0 0 4px 4px rgba(77, 0, 0, 0.741);
+  color: white;
+}
+
+.list-clickable:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,16 @@
+.lvl-display {
+  text-align: center;
+  border: 2px solid rgba(0, 204, 0, 0.95);
+  border-radius: 5px;
+  padding: 2px 8px;
+  box-sizing: border-box;
+}
+
+.lvl-display > div:first-child {
+  font-size: 15px;
+}
+
+.lvl-display > div:last-child {
+  margin-top: -5px;
+  font-size: 20px;
+}

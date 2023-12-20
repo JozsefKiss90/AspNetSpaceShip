@@ -1,0 +1,16 @@
+.location-list {
+  width: 100%;
+}
+
+.location-list-top {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.location-list-title {
+  font-size: 35px;
+}

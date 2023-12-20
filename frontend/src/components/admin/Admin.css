@@ -1,0 +1,74 @@
+.admin-window {
+  width: 70%;
+  height: 80%;
+  margin: auto;
+  border: 4px solid black;
+  border-radius: 5px;
+  background-image: -webkit-linear-gradient(
+    rgba(0, 82, 144, 0.75),
+    rgba(0, 30, 96, 0.35),
+    rgba(0, 82, 144, 0.75)
+  );
+  box-shadow: 0 0 5px 5px rgba(0, 7, 23, 0.85);
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.admin-list-elem {
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: rgba(0, 88, 146, 0.494);
+  margin: 2px 20px 2px 20px;
+}
+
+.admin-list-elem:hover {
+  background-color: rgba(0, 124, 207, 0.494);
+}
+
+.admin-list-elem > div {
+  margin: 10px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 0.75fr;
+  align-items: center;
+}
+
+.admin-level > div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.admin-level-actions {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-level input {
+  all: unset;
+  max-width: 100px;
+  border-bottom: 2px solid white;
+}
+
+.admin-level-cost {
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.2fr;
+  gap: 5px;
+  align-items: center;
+}
+
+.admin-level-cost button {
+  all: unset;
+  color: rgba(255, 255, 255, 0.75);
+  align-items: center;
+  text-align: center;
+}
+
+.admin-level-cost button:hover {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}

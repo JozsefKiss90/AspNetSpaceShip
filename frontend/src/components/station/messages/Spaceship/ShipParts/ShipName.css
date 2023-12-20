@@ -1,0 +1,29 @@
+.ship-name {
+  height: 65px !important;
+  font-size: 50px;
+}
+
+.name-input-div {
+  display: flex;
+  width: 100%;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.name-input {
+  font-size: 50px;
+  background-color: rgba(45, 182, 45, 0);
+  border: solid rgba(0, 0, 0, 0.09) 3px;
+  border-radius: 5px;
+  width: fit-content;
+  color: white;
+  font-family: "Orbitron", sans-serif;
+}
+
+.name-input:active,
+.name-input:focus {
+  border: solid rgba(0, 0, 0, 0.18) 3px;
+  border-radius: 5px;
+  outline: none;
+  color: white;
+}

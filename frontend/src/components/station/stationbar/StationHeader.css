@@ -1,0 +1,26 @@
+.station-header {
+  background-image: -webkit-linear-gradient(#001700, #002300, #001700);
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+  border: #000000 solid 4px;
+  box-shadow: 0 0 5px 5px rgba(0, 23, 0, 0.85);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+}
+
+.station-name {
+  overflow: hidden;
+}
+
+.station-header-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: end;
+}
