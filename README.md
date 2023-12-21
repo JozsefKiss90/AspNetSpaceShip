@@ -1,10 +1,9 @@
-<<<<<<< HEAD
 # AspNetSpaceShip
 =======
 # Spaceship Manager Browser Game
 
 ## Description
-Spaceship Manager is a browser-based strategy game where players manage spaceships and space stations, embarking on various missions in a dynamic space environment.
+The application is a browser-based spaceship manager game where players manage spaceships and space stations, embarking on various missions in a dynamic space environment.
 
 ## Getting Started
 
@@ -31,6 +30,7 @@ Spaceship Manager is a browser-based strategy game where players manage spaceshi
 3. **Access the Application**
 - Frontend: Open `http://localhost:3000` in your browser.
 - Backend API: Access `http://localhost:5056/swagger` for Swagger UI.
+- Register then log in with your credentials.
 
 ### Running without Docker
 
@@ -70,13 +70,7 @@ Spaceship Manager is a browser-based strategy game where players manage spaceshi
 - Open the solution or project file.
 - Utilize Rider's built-in tools to run or debug.
 
-## Contributing
-Contributions are welcome! Please follow the standard GitHub flow for submitting issues or pull requests.
-
-## License
-This project is licensed under [Your License Choice].
-
 ## Additional Notes
 - Ensure you change the password in the `docker-compose.yml` and `appsettings.json` files to maintain security.
 - Replace any placeholder URLs with your project's actual URLs.
->>>>>>> docker
+- You can run the unit and integration test in their respective folders.
