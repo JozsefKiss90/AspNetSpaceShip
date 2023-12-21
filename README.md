@@ -1,5 +1,3 @@
-# AspNetSpaceShip
- 
 # Spaceship Manager Browser Game
 
 ## Description
@@ -73,4 +71,4 @@ The application is a browser-based spaceship manager game where players manage s
 ## Additional Notes
 - Ensure you change the password in the `docker-compose.yml` and `appsettings.json` files to maintain security.
 - Replace any placeholder URLs with your project's actual URLs.
-- You can run the unit and integration test in their respective folders.
+- You can run the unit and integration test in their respective TestProject and Integration folders.
