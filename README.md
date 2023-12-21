@@ -1,5 +1,5 @@
 # AspNetSpaceShip
-=======
+ 
 # Spaceship Manager Browser Game
 
 ## Description
